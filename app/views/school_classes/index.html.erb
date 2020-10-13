@@ -1,0 +1,8 @@
+<% @school_classes.each do |clasz| %>
+  <div><%= clasz.title %></div>
+  <div><%= clasz.room_number %></div>
+<% end %>
+
+<% @school_classes.each do |clasz| %>
+  <h1> Checkout our Facilities: <%= link_to  "#{clasz.title}, #{clasz.room_number}",  school_class_path(clasz)  %></h1>
+<% end %>  
